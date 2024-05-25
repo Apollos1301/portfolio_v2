@@ -1,0 +1,142 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100vh; background-color: #F7F7F7; rotate: 180deg; transform: scaleX(-1);">
+  <g fill="none" stroke="#000" stroke-width="0.1">
+    <path d="M58 0 C 55 30, 61 50, 60 120">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M58 0 C 55 30, 61 50, 60 120;
+                                                                           M58 0 C 63 40, 57 70, 60 120;
+                                                                           M58 0 C 53 20, 63 60, 60 120;
+                                                                           M58 0 C 55 30, 61 50, 60 120"/>
+    </path>
+    <path d="M59 0 C 56 40, 62 60, 60 120">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M59 0 C 56 40, 62 60, 60 120;
+                                                                           M59 0 C 64 50, 58 80, 60 120;
+                                                                           M59 0 C 54 30, 64 70, 60 120;
+                                                                           M59 0 C 56 40, 62 60, 60 120"/>
+    </path>
+    <path d="M60 0 C 57 20, 63 70, 60 120">
+      <animate attributeName="d" dur="14s" repeatCount="indefinite" values="M60 0 C 57 20, 63 70, 60 120;
+                                                                           M60 0 C 65 30, 55 90, 60 120;
+                                                                           M60 0 C 55 10, 65 80, 60 120;
+                                                                           M60 0 C 57 20, 63 70, 60 120"/>
+    </path>
+    <path d="M61 0 C 58 50, 64 80, 60 120">
+      <animate attributeName="d" dur="11s" repeatCount="indefinite" values="M61 0 C 58 50, 64 80, 60 120;
+                                                                           M61 0 C 66 60, 56 100, 60 120;
+                                                                           M61 0 C 56 40, 66 90, 60 120;
+                                                                           M61 0 C 58 50, 64 80, 60 120"/>
+    </path>
+    <path d="M62 0 C 59 25, 65 75, 60 120">
+      <animate attributeName="d" dur="13s" repeatCount="indefinite" values="M62 0 C 59 25, 65 75, 60 120;
+                                                                           M62 0 C 67 35, 57 85, 60 120;
+                                                                           M62 0 C 57 15, 67 65, 60 120;
+                                                                           M62 0 C 59 25, 65 75, 60 120"/>
+    </path>
+    <path d="M63 0 C 60 45, 66 90, 60 120">
+      <animate attributeName="d" dur="14s" repeatCount="indefinite" values="M63 0 C 60 45, 66 90, 60 120;
+                                                                           M63 0 C 68 55, 58 95, 60 120;
+                                                                           M63 0 C 58 35, 68 85, 60 120;
+                                                                           M63 0 C 60 45, 66 90, 60 120"/>
+    </path>
+    <path d="M64 0 C 61 30, 67 70, 60 120">
+      <animate attributeName="d" dur="16s" repeatCount="indefinite" values="M64 0 C 61 30, 67 70, 60 120;
+                                                                           M64 0 C 69 40, 59 80, 60 120;
+                                                                           M64 0 C 59 20, 69 60, 60 120;
+                                                                           M64 0 C 61 30, 67 70, 60 120"/>
+    </path>
+    <path d="M65 0 C 62 35, 68 75, 60 120">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M65 0 C 62 35, 68 75, 60 120;
+                                                                           M65 0 C 70 45, 60 85, 60 120;
+                                                                           M65 0 C 60 25, 70 65, 60 120;
+                                                                           M65 0 C 62 35, 68 75, 60 120"/>
+    </path>
+    <path d="M66 0 C 63 20, 69 60, 60 120">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M66 0 C 63 20, 69 60, 60 120;
+                                                                           M66 0 C 71 30, 61 70, 60 120;
+                                                                           M66 0 C 61 10, 71 50, 60 120;
+                                                                           M66 0 C 63 20, 69 60, 60 120"/>
+    </path>
+    <path d="M67 0 C 64 40, 70 85, 60 120">
+      <animate attributeName="d" dur="14s" repeatCount="indefinite" values="M67 0 C 64 40, 70 85, 60 120;
+                                                                           M67 0 C 72 50, 62 95, 60 120;
+                                                                           M67 0 C 62 30, 72 75, 60 120;
+                                                                           M67 0 C 64 40, 70 85, 60 120"/>
+    </path>
+    <path d="M68 0 C 65 30, 71 90, 60 120">
+      <animate attributeName="d" dur="13s" repeatCount="indefinite" values="M68 0 C 65 30, 71 90, 60 120;
+                                                                           M68 0 C 73 40, 63 100, 60 120;
+                                                                           M68 0 C 63 20, 73 80, 60 120;
+                                                                           M68 0 C 65 30, 71 90, 60 120"/>
+    </path>
+    <path d="M69 0 C 66 50, 72 75, 60 120">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M69 0 C 66 50, 72 75, 60 120;
+                                                                           M69 0 C 74 60, 64 85, 60 120;
+                                                                           M69 0 C 64 40, 74 70, 60 120;
+                                                                           M69 0 C 66 50, 72 75, 60 120"/>
+    </path>
+    <path d="M70 0 C 67 25, 73 85, 60 120">
+      <animate attributeName="d" dur="11s" repeatCount="indefinite" values="M70 0 C 67 25, 73 85, 60 120;
+                                                                           M70 0 C 75 35, 65 95, 60 120;
+                                                                           M70 0 C 65 15, 75 75, 60 120;
+                                                                           M70 0 C 67 25, 73 85, 60 120"/>
+    </path>
+    <path d="M71 0 C 68 45, 74 70, 60 120">
+      <animate attributeName="d" dur="13s" repeatCount="indefinite" values="M71 0 C 68 45, 74 70, 60 120;
+                                                                           M71 0 C 76 55, 66 80, 60 120;
+                                                                           M71 0 C 66 35, 76 65, 60 120;
+                                                                           M71 0 C 68 45, 74 70, 60 120"/>
+    </path>
+    <path d="M72 0 C 69 30, 75 90, 60 120">
+      <animate attributeName="d" dur="14s" repeatCount="indefinite" values="M72 0 C 69 30, 75 90, 60 120;
+                                                                           M72 0 C 77 40, 67 100, 60 120;
+                                                                           M72 0 C 67 20, 77 80, 60 120;
+                                                                           M72 0 C 69 30, 75 90, 60 120"/>
+    </path>
+    <path d="M73 0 C 70 50, 76 95, 60 120">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M73 0 C 70 50, 76 95, 60 120;
+                                                                           M73 0 C 78 60, 68 105, 60 120;
+                                                                           M73 0 C 68 40, 78 85, 60 120;
+                                                                           M73 0 C 70 50, 76 95, 60 120"/>
+    </path>
+    <path d="M74 0 C 71 35, 77 85, 60 120">
+      <animate attributeName="d" dur="11s" repeatCount="indefinite" values="M74 0 C 71 35, 77 85, 60 120;
+                                                                           M74 0 C 79 45, 69 95, 60 120;
+                                                                           M74 0 C 69 25, 79 75, 60 120;
+                                                                           M74 0 C 71 35, 77 85, 60 120"/>
+    </path>
+    <path d="M75 0 C 72 25, 78 80, 60 120">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M75 0 C 72 25, 78 80, 60 120;
+                                                                           M75 0 C 80 35, 70 90, 60 120;
+                                                                           M75 0 C 70 15, 80 70, 60 120;
+                                                                           M75 0 C 72 25, 78 80, 60 120"/>
+    </path>
+    <path d="M76 0 C 73 45, 79 75, 60 120">
+      <animate attributeName="d" dur="15s" repeatCount="indefinite" values="M76 0 C 73 45, 79 75, 60 120;
+                                                                           M76 0 C 81 55, 71 85, 60 120;
+                                                                           M76 0 C 71 35, 81 65, 60 120;
+                                                                           M76 0 C 73 45, 79 75, 60 120"/>
+    </path>
+    <path d="M77 0 C 74 50, 80 90, 60 120">
+      <animate attributeName="d" dur="14s" repeatCount="indefinite" values="M77 0 C 74 50, 80 90, 60 120;
+                                                                           M77 0 C 82 60, 72 100, 60 120;
+                                                                           M77 0 C 72 40, 82 80, 60 120;
+                                                                           M77 0 C 74 50, 80 90, 60 120"/>
+    </path>
+    <path d="M78 0 C 75 30, 81 85, 60 120">
+      <animate attributeName="d" dur="13s" repeatCount="indefinite" values="M78 0 C 75 30, 81 85, 60 120;
+                                                                           M78 0 C 83 40, 73 95, 60 120;
+                                                                           M78 0 C 73 20, 83 75, 60 120;
+                                                                           M78 0 C 75 30, 81 85, 60 120"/>
+    </path>
+    <path d="M79 0 C 76 45, 82 95, 60 120">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M79 0 C 76 45, 82 95, 60 120;
+                                                                           M79 0 C 84 55, 74 105, 60 120;
+                                                                           M79 0 C 74 35, 84 85, 60 120;
+                                                                           M79 0 C 76 45, 82 95, 60 120"/>
+    </path>
+    <path d="M80 0 C 77 35, 83 90, 60 120">
+      <animate attributeName="d" dur="11s" repeatCount="indefinite" values="M80 0 C 77 35, 83 90, 60 120;
+                                                                           M80 0 C 85 45, 75 100, 60 120;
+                                                                           M80 0 C 75 25, 85 80, 60 120;
+                                                                           M80 0 C 77 35, 83 90, 60 120"/>
+    </path>
+  </g>
+</svg>
