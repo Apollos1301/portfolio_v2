@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100px" height="50px" viewBox="0 0 700 400" style="background-color: #F7F7F7;">
+  <style>
+    .node {
+      fill: #555555;
+    }
+    .link {
+      stroke: #555555;
+      stroke-width: 2;
+    }
+    .input {
+      fill: #4ef0f9;
+    }
+  </style>
+  
+  <!-- Input Layer -->
+  <circle class="node" cx="100" cy="150" r="5" />
+  <circle class="node" cx="100" cy="250" r="5" />
+  <circle class="node" cx="100" cy="350" r="5" />
+  
+  <!-- Hidden Layer 1 -->
+  <circle class="node" cx="300" cy="100" r="5" />
+  <circle class="node" cx="300" cy="200" r="5" />
+  <circle class="node" cx="300" cy="300" r="5" />
+  <circle class="node" cx="300" cy="400" r="5" />
+  
+  <!-- Hidden Layer 2 -->
+  <circle class="node" cx="500" cy="150" r="5" />
+  <circle class="node" cx="500" cy="300" r="5" />
+  
+  <!-- Output Layer -->
+  <circle class="node" cx="700" cy="250" r="5" />
+  
+  <!-- Links from Input to Hidden Layer 1 -->
+  <line class="link" x1="100" y1="150" x2="300" y2="100" />
+  <line class="link" x1="100" y1="150" x2="300" y2="200" />
+  <line class="link" x1="100" y1="150" x2="300" y2="300" />
+  <line class="link" x1="100" y1="150" x2="300" y2="400" />
+  
+  <line class="link" x1="100" y1="250" x2="300" y2="100" />
+  <line class="link" x1="100" y1="250" x2="300" y2="200" />
+  <line class="link" x1="100" y1="250" x2="300" y2="300" />
+  <line class="link" x1="100" y1="250" x2="300" y2="400" />
+  
+  <line class="link" x1="100" y1="350" x2="300" y2="100" />
+  <line class="link" x1="100" y1="350" x2="300" y2="200" />
+  <line class="link" x1="100" y1="350" x2="300" y2="300" />
+  <line class="link" x1="100" y1="350" x2="300" y2="400" />
+  
+  <!-- Links from Hidden Layer 1 to Hidden Layer 2 -->
+  <line class="link" x1="300" y1="100" x2="500" y2="150" />
+  <line class="link" x1="300" y1="100" x2="500" y2="300" />
+  <line class="link" x1="300" y1="200" x2="500" y2="150" />
+  <line class="link" x1="300" y1="200" x2="500" y2="300" />
+  <line class="link" x1="300" y1="300" x2="500" y2="150" />
+  <line class="link" x1="300" y1="300" x2="500" y2="300" />
+  <line class="link" x1="300" y1="400" x2="500" y2="150" />
+  <line class="link" x1="300" y1="400" x2="500" y2="300" />
+  
+  <!-- Links from Hidden Layer 2 to Output Layer -->
+  <line class="link" x1="500" y1="150" x2="700" y2="250" />
+  <line class="link" x1="500" y1="300" x2="700" y2="250" />
+  
+  <!-- Animated Input -->
+  <!-- Input 1 -->
+  <circle class="input" cx="100" cy="150" r="5">
+    <animate attributeName="cx" from="100" to="700" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="150;100;150;250" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle class="input" cx="100" cy="150" r="5">
+    <animate attributeName="cx" from="100" to="700" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="150;200;150;250" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <!-- Input 2 -->
+  <circle class="input" cx="100" cy="250" r="5">
+    <animate attributeName="cx" from="100" to="700" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="250;200;300;250" dur="6s" repeatCount="indefinite" />
+  </circle>
+  <circle class="input" cx="100" cy="250" r="5">
+    <animate attributeName="cx" from="100" to="700" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="250;300;300;250" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <!-- Input 3 -->
+  <circle class="input" cx="100" cy="350" r="5">
+    <animate attributeName="cx" from="100" to="700" dur="7s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="350;400;300;250" dur="7s" repeatCount="indefinite" />
+  </circle>
+  <circle class="input" cx="100" cy="350" r="5">
+    <animate attributeName="cx" from="100" to="700" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="350;300;300;250" dur="4s" repeatCount="indefinite" />
+  </circle>
+</svg>

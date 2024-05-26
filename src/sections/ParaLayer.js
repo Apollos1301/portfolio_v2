@@ -1,160 +1,55 @@
 import React, { useRef, useEffect, useState } from "react";
-import { BrowserView, MobileView } from "react-device-detect";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import LandingSection from "./LandingSection";
-import SocialIcons from "../components/SocialIcons";
-import AboutSection from "./AboutSection";
-import FirstP from "../components/background/aboutMe/FirstP";
-import SecondP from "../components/background/aboutMe/SecondP";
-import ThirdP from "../components/background/aboutMe/ThirdP";
-import Icons1 from "../components/background/aboutMe/Icons1";
-import Icons2 from "../components/background/aboutMe/Icons2";
-import Icons3 from "../components/background/aboutMe/Icons3";
-import SkillsSection from "./SkillsSection";
-import ProjectSection from "./ProjectSection";
-import SingleProjectLeft from "../components/project/SingleProjectLeft";
-import SingleProjectRight from "../components/project/SingleProjectRight";
-import ContactSection from "./ContactSection";
+import {
+  BrowserView,
+  MobileView,
+  useMobileOrientation,
+} from "react-device-detect";
+
+import BrowserSection from "./BrowserSection";
+import MobileSection from "./MobileSection";
 
 var myProjects = [
   {
-    name: "Bombo",
+    name: "Burned Calories Prediction",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate beatae molestiae dolorum minima iure cum architecto qui? Dignissimos esse vero laborum odio recusandae? Eos fuga libero error neque temporibus!",
-    link: "https://www.google.com/",
+      "In this project, I worked with an 'Exercise and Burned Calories' dataset. I performed data cleaning and created several visualizations to better understand the dataset. The primary focus of this project was to predict burned calories using three different machine learning and deep learning models. For each model, I trained it twice: once with all the features in the dataset and once with selected features based on the Chi-squared statistics of non-negative features for classification tasks.",
+    link: "https://github.com/Apollos1301/calories_prediction",
   },
   {
-    name: "Samba",
+    name: "Image classification and bounding-box regression",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate beatae molestiae dolorum minima iure cum architecto qui? Dignissimos esse vero laborum odio recusandae? Eos fuga libero error neque temporibus!",
-    link: "https://www.google.com/",
+      "In this project, I used a dataset consisting of images of butterflies, Dalmatians, and dolphins, along with their corresponding bounding boxes. I utilized the pre-trained CNN model VGG16 and fine-tuned it for my task. Additionally, I added two different model heads: a regression head to predict the x1, y1, x2, y2 coordinates of the bounding box, and a classification head to identify the animal in the image.",
+    link: "https://github.com/Apollos1301/bb_regression",
   },
   {
-    name: "Klamba",
+    name: "Gender Prediction",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate beatae molestiae dolorum minima iure cum architecto qui? Dignissimos esse vero laborum odio recusandae? Eos fuga libero error neque temporibus!",
-    link: "https://www.google.com/",
+      "In this project, I used a dataset consisting of pictures of women and men. I developed a custom CNN model and trained it on the entire dataset without splitting it into training and testing sets.",
+    link: "https://github.com/Apollos1301/gender_prediction",
+  },
+  {
+    name: "Transformer from Scratch",
+    description:
+      "I developed a Transformer model from scratch using PyTorch and NumPy. I trained it on two different datasets: Multi30K and IWSLT2017, both for the task of translating from English to German.",
+    link: "https://www.kaggle.com/work/collections/14013092",
   },
 ];
 export default function ParaLayer() {
-  var myvalue = 5.7;
+  const { isLandscape } = useMobileOrientation();
   const [projects, setProjects] = useState(myProjects);
   const parallax = useRef(null);
-  useEffect(() => {
-    // setInterval(() => {
-    //   console.log(parallax.current.current);
-    // }, 500);
-    // console.log(parallax.current.content);
-    // console.log(parallax.current.container);
-  }, [parallax]);
 
   return (
     <>
       <BrowserView>
-        <div className="w-[100%] h-[100%] bg-background">
-          <Parallax
-            ref={parallax}
-            pages={6.7 + projects.length * 0.5 + 0.8 + 1}
-            className="bg-background"
-          >
-            <LandingSection />
-            <ParallaxLayer offset={1.4} speed={0}>
-              <SocialIcons />
-            </ParallaxLayer>
-            <ParallaxLayer
-              sticky={{ start: 0.85, end: 1.35 }}
-              className="pointer-events-none"
-            >
-              <AboutSection />
-            </ParallaxLayer>
-            <ParallaxLayer
-              sticky={{ start: 1.8, end: 2.5 }}
-              className="flex items-center justify-items-center place-content-center"
-            >
-              <FirstP />
-            </ParallaxLayer>
-            <ParallaxLayer
-              sticky={{ start: 3.2, end: 3.9 }}
-              className="flex items-center justify-items-center place-content-center"
-            >
-              <SecondP />
-            </ParallaxLayer>
-            <ParallaxLayer
-              sticky={{ start: 4.6, end: 5.3 }}
-              className="flex items-center justify-items-center place-content-center"
-            >
-              <ThirdP />
-            </ParallaxLayer>
-            <ParallaxLayer offset={2.3} speed={1}>
-              <Icons1 />
-            </ParallaxLayer>
-            <ParallaxLayer offset={3.9} speed={1}>
-              <Icons2 />
-            </ParallaxLayer>
-            <ParallaxLayer offset={5.1} speed={1}>
-              <Icons3 />
-            </ParallaxLayer>
-            <ParallaxLayer offset={6.1} speed={0.5}>
-              <ProjectSection />
-            </ParallaxLayer>
-            {projects.map((obj, index) => {
-              return (
-                <ParallaxLayer
-                  offset={6.7 + index * 0.5}
-                  speed={0}
-                  factor={0.5}
-                >
-                  {index % 2 == 0 ? (
-                    <SingleProjectRight
-                      title={obj.name}
-                      description={obj.description}
-                      link={obj.link}
-                    />
-                  ) : (
-                    <SingleProjectLeft
-                      title={obj.name}
-                      description={obj.description}
-                      link={obj.link}
-                    />
-                  )}
-                </ParallaxLayer>
-              );
-            })}
-            <ParallaxLayer
-              offset={6.7 + projects.length * 0.5 + 0.3}
-              speed={0.2}
-              factor={0.5}
-              className="flex place-content-center items-center"
-            >
-              <h2 className="font-inter text-textPrimary text-5xl text-center underline">
-                Contact me!
-              </h2>
-            </ParallaxLayer>
-            <ParallaxLayer
-              offset={6.7 + projects.length * 0.5 + 0.8}
-              speed={0}
-              factor={0.5}
-            >
-              <ContactSection />
-            </ParallaxLayer>
-          </Parallax>
-        </div>
+        <BrowserSection projects={myProjects} />
       </BrowserView>
       <MobileView>
-        <div className="w-[100%] h-[100%] bg-background">
-          <Parallax
-            horizontal={true}
-            ref={parallax}
-            pages={4}
-            className="bg-background"
-          >
-            <LandingSection />
-            <ParallaxLayer offset={1.9} speed={1.5} className="z-10">
-              <div className="w-[100%] h-[50%] bg-red-500"></div>
-            </ParallaxLayer>
-            <AboutSection />
-          </Parallax>
-        </div>
+        {isLandscape ? (
+          <BrowserSection projects={myProjects} />
+        ) : (
+          <MobileSection projects={myProjects} />
+        )}
       </MobileView>
     </>
   );
