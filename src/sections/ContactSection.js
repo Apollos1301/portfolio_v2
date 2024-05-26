@@ -1,6 +1,4 @@
 import React from "react";
-import { ParallaxLayer } from "@react-spring/parallax";
-import { BrowserView, MobileView } from "react-device-detect";
 import wavingLeft from "../assets/wavingHandLeft.svg";
 import wavinRight from "../assets/wavingHandRight.svg";
 

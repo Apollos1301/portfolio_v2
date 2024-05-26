@@ -1,6 +1,6 @@
 import React from "react";
 
-function ThirdP_mobile() {
+function ThirdPMobile() {
   return (
     <div className="w-[80%] p-10 bg-secondaryBackground border-b-2 border-border rounded-md">
       <p>
@@ -15,4 +15,4 @@ function ThirdP_mobile() {
   );
 }
 
-export default ThirdP_mobile;
+export default ThirdPMobile;

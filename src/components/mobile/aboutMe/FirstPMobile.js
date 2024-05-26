@@ -1,6 +1,6 @@
 import React from "react";
 
-function FirstP_mobile() {
+function FirstPMobile() {
   return (
     <div className="w-[80%] p-10 text-textPrimary bg-secondaryBackground border-b-2 border-border rounded-md">
       <p>
@@ -26,4 +26,4 @@ function FirstP_mobile() {
   );
 }
 
-export default FirstP_mobile;
+export default FirstPMobile;

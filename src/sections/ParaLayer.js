@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import {
   BrowserView,
   MobileView,
@@ -36,8 +36,6 @@ var myProjects = [
 ];
 export default function ParaLayer() {
   const { isLandscape } = useMobileOrientation();
-  const [projects, setProjects] = useState(myProjects);
-  const parallax = useRef(null);
 
   return (
     <>

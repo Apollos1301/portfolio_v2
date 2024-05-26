@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { ParallaxLayer } from "@react-spring/parallax";
-import LandingBgSVG from "../../components/background/LandingBgSVG";
-// import landnigBg from "../assets/low-poly-grid.svg";
 import landingBg from "../../assets/landing_bg2_mobile.svg";
 import profile_pic from "../../assets/landing/profile_pic.jpg";
 function LandingSectionMobile() {

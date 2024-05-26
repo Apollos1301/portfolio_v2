@@ -5,12 +5,12 @@ import ProjectSection from "./ProjectSection";
 
 import LandingSectionMobile from "./mobile/LandingSectionMobile";
 import SocialIconsMobile from "../components/mobile/SocialIconsMobile";
-import FirstP_mobile from "../components/mobile/aboutMe/FirstP_mobile";
-import SecondP_mobile from "../components/mobile/aboutMe/SecondP_mobile";
-import ThirdP_mobile from "../components/mobile/aboutMe/ThirdP_mobile";
-import Icon1_mobile from "../components/mobile/aboutMe/Icons1_mobile";
-import Icon2_mobile from "../components/mobile/aboutMe/Icons2_mobile";
-import Icon3_mobile from "../components/mobile/aboutMe/Icons3_mobile";
+import FirstPMobile from "../components/mobile/aboutMe/FirstPMobile";
+import SecondPMobile from "../components/mobile/aboutMe/SecondPMobile";
+import ThirdPMobile from "../components/mobile/aboutMe/ThirdPMobile";
+import Icon1Mobile from "../components/mobile/aboutMe/Icons1Mobile";
+import Icon2Mobile from "../components/mobile/aboutMe/Icons2Mobile";
+import Icon3Mobile from "../components/mobile/aboutMe/Icons3Mobile";
 import SingleProjectTop from "../components/mobile/project/SingleProjectTop";
 import SingleProjectBottom from "../components/mobile/project/SingleProjectBottom";
 import ContactSectionMobile from "./mobile/ContactSectionMobile";
@@ -39,28 +39,28 @@ function MobileSection({ projects }) {
           sticky={{ start: 2.4, end: 3 }}
           className="flex items-center justify-items-center place-content-center"
         >
-          <FirstP_mobile />
+          <FirstPMobile />
         </ParallaxLayer>
         <ParallaxLayer
           sticky={{ start: 4.4, end: 5 }}
           className="flex items-center justify-items-center place-content-center"
         >
-          <SecondP_mobile />
+          <SecondPMobile />
         </ParallaxLayer>
         <ParallaxLayer
           sticky={{ start: 6.4, end: 7 }}
           className="flex items-center justify-items-center place-content-center"
         >
-          <ThirdP_mobile />
+          <ThirdPMobile />
         </ParallaxLayer>
         <ParallaxLayer offset={2.9} speed={1}>
-          <Icon1_mobile />
+          <Icon1Mobile />
         </ParallaxLayer>
         <ParallaxLayer offset={4.9} speed={1}>
-          <Icon2_mobile />
+          <Icon2Mobile />
         </ParallaxLayer>
         <ParallaxLayer offset={6.9} speed={1}>
-          <Icon3_mobile />
+          <Icon3Mobile />
         </ParallaxLayer>
         <ParallaxLayer offset={8.3} speed={0.5}>
           <ProjectSection />
@@ -68,7 +68,7 @@ function MobileSection({ projects }) {
         {projects.map((obj, index) => {
           return (
             <ParallaxLayer offset={9.5 + index * 1} speed={0} factor={1}>
-              {index % 2 == 0 ? (
+              {index % 2 === 0 ? (
                 <SingleProjectTop
                   title={obj.name}
                   description={obj.description}

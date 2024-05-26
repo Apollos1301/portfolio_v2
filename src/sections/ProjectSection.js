@@ -1,6 +1,4 @@
 import React from "react";
-import { ParallaxLayer } from "@react-spring/parallax";
-import { BrowserView, MobileView } from "react-device-detect";
 
 function ProjectSection({ title, description, link }) {
   return (
