@@ -56,7 +56,11 @@ function SocialIconsMobile() {
           onMouseLeave={() => setHover1(false)}
         >
           <div className="absolute w-full h-full bg-background opacity-40 z-10 cursor-pointer" />
-          <img src={kaggleIcon} alt="kaggle" className="absolute" />
+          <img
+            src={kaggleIcon}
+            alt="kaggle"
+            className="absolute drop-shadow-lg"
+          />
         </animated.div>
       </a>
       <a
@@ -71,7 +75,7 @@ function SocialIconsMobile() {
           onMouseLeave={() => setHover2(false)}
         >
           <div className="absolute w-full h-full bg-background opacity-40 z-10 cursor-pointer" />
-          <img src={linkedInIcon} alt="linkedIn" />
+          <img src={linkedInIcon} alt="linkedIn" className="drop-shadow-lg" />
         </animated.div>
       </a>
       <a
@@ -86,7 +90,7 @@ function SocialIconsMobile() {
           onMouseLeave={() => setHover3(false)}
         >
           <div className="absolute w-full h-full bg-background opacity-40 z-10 cursor-pointer" />
-          <img src={githubIcon} alt="github" />
+          <img src={githubIcon} alt="github" className="drop-shadow-lg" />
         </animated.div>
       </a>
     </animated.div>

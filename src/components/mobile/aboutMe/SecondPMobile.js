@@ -2,9 +2,9 @@ import React from "react";
 
 function SecondPMobile() {
   return (
-    <div className="w-[80%] p-10 text-textPrimary bg-secondaryBackground border-b-2 border-border rounded-md">
+    <div className="w-[80%] p-10 text-textPrimary bg-secondaryBackground border-b-2 border-border rounded-md drop-shadow-md">
       <p>
-        A native{" "}
+        As a native{" "}
         <span className="underline decoration-4 decoration-primaryAccent">
           German
         </span>{" "}

@@ -8,7 +8,7 @@ function ContactSectionMobile() {
       <div className="w-[5rem] h-[5rem]">
         <img src={wavingLeft} alt="waving hand" />
       </div>
-      <div className="w-[85%] bg-secondaryBackground p-5 border-b-2 border-border">
+      <div className="w-[85%] bg-secondaryBackground p-5 border-b-2 border-border drop-shadow-lg">
         <p className="w-full font-inter text-textPrimary text-[1rem] text-center leading-8 ">
           Thank you for visiting my portfolio. If you're looking for a skilled
           ML and web developer, have a project you’d like to discuss, or just

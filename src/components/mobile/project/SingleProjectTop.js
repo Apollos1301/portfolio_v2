@@ -1,5 +1,5 @@
 import React from "react";
-import { useSpring, useInView, animated } from "@react-spring/web";
+import { useInView, animated } from "@react-spring/web";
 import spinningWheelRight from "../../../assets/spinningWheelRight.svg";
 
 function SingleProjectTop({ title, description, link }) {
@@ -15,13 +15,13 @@ function SingleProjectTop({ title, description, link }) {
       },
     }),
     {
-      rootMargin: "0% 0%",
+      rootMargin: "0% -30%",
     }
   );
   return (
     <div className="w-full h-full flex">
-      <div className="flex flex-col w-full h-[75%] place-content-start items-center">
-        <div className="w-[80%] h-[25%] flex items-start ">
+      <div className="flex flex-col w-full h-[75%] place-content-start items-center drop-shadow-lg">
+        <div className="w-[80%] h-[25%] flex items-start">
           <animated.img
             ref={ref}
             style={springs}
@@ -32,7 +32,7 @@ function SingleProjectTop({ title, description, link }) {
         </div>
         <animated.div
           style={springs}
-          className=" font-inter text-textPrimary border-t-2 border-r-2 border-border h-[85%] w-full flex flex-col justify-between p-5"
+          className="bg-secondaryBackground font-inter text-textPrimary border-t-2 border-r-2 border-border h-[85%] w-full flex flex-col justify-between p-5"
         >
           <h4 className="text-2xl underline decoration-2 self-center">
             Title: {title}

@@ -51,12 +51,16 @@ function SocialIcons() {
       >
         <animated.div
           style={{ ...props1 }}
-          className="w-[6.5rem] h-[6.5rem] relative"
+          className="w-[6.5rem] h-[6.5rem] relative "
           onMouseEnter={() => setHover1(true)}
           onMouseLeave={() => setHover1(false)}
         >
           <div className="absolute w-full h-full bg-background opacity-40 z-10 cursor-pointer" />
-          <img src={kaggleIcon} alt="kaggle" className="absolute" />
+          <img
+            src={kaggleIcon}
+            alt="kaggle"
+            className="absolute drop-shadow-lg"
+          />
         </animated.div>
       </a>
       <a
@@ -71,7 +75,7 @@ function SocialIcons() {
           onMouseLeave={() => setHover2(false)}
         >
           <div className="absolute w-full h-full bg-background opacity-40 z-10 cursor-pointer" />
-          <img src={linkedInIcon} alt="linkedIn" />
+          <img src={linkedInIcon} alt="linkedIn " className="drop-shadow-lg" />
         </animated.div>
       </a>
       <a
@@ -86,7 +90,7 @@ function SocialIcons() {
           onMouseLeave={() => setHover3(false)}
         >
           <div className="absolute w-full h-full bg-background opacity-40 z-10 cursor-pointer" />
-          <img src={githubIcon} alt="github" />
+          <img src={githubIcon} alt="github" className="drop-shadow-lg" />
         </animated.div>
       </a>
     </animated.div>

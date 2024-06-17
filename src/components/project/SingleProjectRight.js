@@ -1,5 +1,5 @@
 import React from "react";
-import { useSpring, useInView, animated } from "@react-spring/web";
+import {  useInView, animated } from "@react-spring/web";
 import spinningWheelRight from "../../assets/spinningWheelRight.svg";
 
 function SingleProjectRight({ title, description, link }) {
@@ -19,16 +19,16 @@ function SingleProjectRight({ title, description, link }) {
     }
   );
   return (
-    <div className="w-full h-full flex place-content-end items-center">
-      <div className="flex h-full w-[75%]">
+    <div className="w-full h-full flex place-content-end items-center drop-shadow-lg">
+      <div className="flex h-full w-[75%] ">
         <animated.div
           style={springs}
-          className="font-inter text-textPrimary border-r-2 border-b-2 border-border h-full w-[85%] flex flex-col justify-between p-5"
+          className="bg-secondaryBackground font-inter text-textPrimary border-r-2 border-b-2 border-border h-full w-[85%] flex flex-col justify-between p-5"
         >
           <h4 className="text-2xl underline decoration-2 self-center">
             Title: {title}
           </h4>
-          <p className="text-textSecondary">{description}</p>
+          <p className="text-textSecondary p-20">{description}</p>
           <a
             className="text-blue-700 self-center"
             href={link}

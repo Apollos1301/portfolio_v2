@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { ParallaxLayer } from "@react-spring/parallax";
-import LandingBgSVG from "../components/background/LandingBgSVG";
-// import landnigBg from "../assets/low-poly-grid.svg";
 import landingBg from "../assets/landing_bg2.svg";
 import profile_pic from "../assets/landing/profile_pic.jpg";
 function LandingSection() {
@@ -71,8 +69,8 @@ function LandingSection() {
           <div className="w-full h-full flex place-content-center items-center">
             <img
               src={profile_pic}
-              alt="profile picture"
-              className="h-[80%] border-2 border-border rounded-md"
+              alt="profile"
+              className="h-[70%] border-2 border-border rounded-md"
             />
           </div>
         </div>
